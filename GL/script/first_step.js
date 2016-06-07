@@ -13,7 +13,6 @@ function memory(n,mem){
 
 //function for taking points for next steps
 function changecolor(n){
-
 if (po != n){
 	po = $("#point"+n).css("background-color");
 	console.log(po);
