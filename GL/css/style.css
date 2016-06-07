@@ -1,0 +1,31 @@
+body {
+background-color:#C9C9C9;
+
+}
+
+table{
+  background-color:#D8D8D8;
+}
+button{
+  height: 30px;
+  width: 180px;
+  text-align: center;
+  color:grey;
+  align:center;
+}
+
+#mtitle{
+  height: 175px;
+  width: 400px;
+  align:center;
+  text-align: center;
+}
+
+
+div[id*=point] {
+    width: 20px;
+ 	  height: 20px;
+  	background-color: white;
+  	border-radius: 20px;
+    onclick:changecolor(id*=point);
+  }
