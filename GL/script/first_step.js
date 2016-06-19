@@ -34,7 +34,9 @@ function readyBtn(n){
 	console.log(st);
 }
 
-    
+function newBtn(n){
+	location.reload();
+}
 
 function game() {
 	while (true) {
