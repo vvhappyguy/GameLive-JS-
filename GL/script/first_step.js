@@ -1,5 +1,6 @@
 var po = 0; //memory for different points
 
+var st=0;
 //starting filling array 20x20
 function matrixArray(rows,columns){
   var mem = [];
@@ -14,15 +15,35 @@ function matrixArray(rows,columns){
 var mem = matrixArray(21,21);
 
 function let(n){
-	changecolor(n);
-	var	i = parseInt(n / 1000);
-	var	j = n % 100;
-	if(mem[i][j]==false){
-		mem[i][j]=true
-	}	else {
-		mem[i][j]=false
+	if (st == 0){
+		changecolor(n);
+		var i = parseInt(n / 1000);
+		var j = n % 100;
+		if (mem[i][j] == false) {
+			mem[i][j] = true
+		} else {
+			mem[i][j] = false
+		}
+		console.log(mem[i][j]);
 	}
-	console.log(mem[i][j]);
+	console.log(st);
+}
+
+function readyBtn(n){
+	st = n;
+	console.log(st);
+}
+
+    
+
+function game() {
+	while (true) {
+		for (var i = 1; i < 21; i++) {
+			for (var j = 1; j < 21; j++) {
+				
+			}
+		}
+	}
 }
 
 //function for taking points for next steps
