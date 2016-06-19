@@ -2,14 +2,8 @@ var po = 0; //memory for different points
 
 function let(n){
 	changecolor(n);
-	memory(n);
 }
 
-//function for remember points
-//with double array
-function memory(n,mem){
-	
-}	
 
 //function for taking points for next steps
 function changecolor(n){
