@@ -25,7 +25,7 @@ function let(n) {
 		} else {
 			mem[i][j] = 0
 		}
-		console.log(mem[i][j]);
+		console.log('mem['+i+']['+j+'] = '+mem[i][j]);
 	}
 	console.log(st);
 }
@@ -47,8 +47,7 @@ function game(n) {
 					console.log(mem[i][j]);
 					var sum = mem[i - 1][j - 1] + mem[i - 1][j] + mem[i - 1][j + 1] + mem[i][j - 1] + mem[i][j + 1] + mem[i + 1][j - 1] + mem[i + 1][j] + mem[i + 1][j + 1];
 					var numP = 1000 * i + j;
-					console.log(numP);
-					console.log(sum);
+					console.log('sum p['+i+']['+j+'] = '+ sum);
 					po = $("#point" + numP).css("background-color");
 					if (po == "rgb(255, 255, 255)") {
 						if (sum == 3) {
@@ -66,8 +65,6 @@ function game(n) {
 					}
 				}
 			}
-		} else if (st == 2) {
-
 		}
 	}
 }
